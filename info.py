@@ -31,7 +31,7 @@ CODE = (environ.get('CODE', 'https://telegra.ph/file/72f425007b22d28bd935e.jpg')
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'api.shareus.io'))
 STREAM_API = (environ.get('STREAM_API', 'PUIAQBIFrydvLhIzAOeGV8yZppu2'))
-STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Ultroid_Official/18'))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/bollywoodmovies4u1'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5466955694').split()]
@@ -58,7 +58,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Verify/token system
 VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
-# HOWTOVERIFY = environ.get('HOWTOVERIFY', url='https://t.me/Ultroid_Official/18') 
+# HOWTOVERIFY = environ.get('HOWTOVERIFY', url='https://t.me/bollywoodmovies4u1') 
 HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/bollywoodmovies4u1') # How to open tutorial link for verification
 
 # Others
