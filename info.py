@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '22505271'))
-API_HASH = environ.get('API_HASH', 'c89a94fcfda4bc06524d0903977fc81e')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6994768927:AAGJMn6BjsJjhLP7yvTYxTL8d1kZkg8OQcE")
+API_ID = int(environ.get('API_ID', '37146043'))
+API_HASH = environ.get('API_HASH', '69d0028fa96e8e6854f704c3a8762621')
+BOT_TOKEN = environ.get('BOT_TOKEN', "8549885712:AAHLV8B8hPgLfcivkZz7aV1yJS5LdBx9zTk")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -35,7 +35,7 @@ STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Ultroid_Official/18'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6695586027').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002027563292').split()] #Channel id for auto indexing ( make sure bot is admin )
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1003552033184').split()] #Channel id for auto indexing ( make sure bot is admin )
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
@@ -43,8 +43,8 @@ auth_channel = environ.get('AUTH_CHANNEL', '-1001725568693') #Channel / Group Id
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002115046888') # support group id ( make sure bot is admin )
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002062925443') # request channel id ( make sure bot is admin )
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1003693399086') # support group id ( make sure bot is admin )
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1003693399086') # request channel id ( make sure bot is admin )
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False)) # True if you want no results messages in Log Channel
@@ -52,30 +52,30 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False)) # True if you want n
 # MongoDB information 
 # https://youtu.be/qFB0cFqiyOM?si=QGuFSZ7qhxl4VTrA
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Cluster0:Cluster0@cluster0.c07xkuf.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "MovizTube")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Krish:krish12@krish.0bvgr0i.mongodb.net/?appName=Krish")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Krish")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Verify/token system
 VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
 # HOWTOVERIFY = environ.get('HOWTOVERIFY', url='https://t.me/Ultroid_Official/18') 
-HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/Ultroid_Official/18') # How to open tutorial link for verification
+HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/bollywoodmovies4u1') # How to open tutorial link for verification
 
 # Others
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'api.shareus.io')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'PUIAQBIFrydvLhIzAOeGV8yZppu2')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'kutt.it')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'qsMGimwPP4GXwVgmU9Hoy0cyJsNHdhQROE97Pcto')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))  # else--> True
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
-PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MovizTube_Group')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MovizTube')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Ultroid_Official/18') # Tutorial video link for opening shortlink website 
+PORT = environ.get("PORT", "3000")
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/bollywoodmovies4u1')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/bollywoodmovies4u1')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/bollywoodmovies4u1') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
-MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ultroidxTeam')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002062925443')) #Log channel id ( make sure bot is admin )
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/UltroidOfficial_chat') #Support group link ( make sure bot is admin )
+MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : KrTeam')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003693399086')) #Log channel id ( make sure bot is admin )
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Krish1210') #Support group link ( make sure bot is admin )
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -102,7 +102,7 @@ QUALITIES = ["360P", "", "480P", "", "720P", "", "1080P", "", "1440P", "", "2160
 # FQDN = ex. => ttoken-78-cdadf96c95a8.herokuapp.com  (remove 'https://' ttoken-78-cdadf96c95a8.herokuapp.com '/' )
 
 # Online Stream and Download
-PORT = int(environ.get('PORT', 8080))
+PORT = int(environ.get('PORT', 3000))
 NO_PORT = bool(environ.get('NO_PORT', False))
 APP_NAME = None
 if 'DYNO' in environ:
@@ -118,7 +118,7 @@ SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
 MULTI_CLIENT = False
-name = str(environ.get('name', 'LazyPrincess'))
+name = str(environ.get('name', 'KrKing121'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True
@@ -131,12 +131,12 @@ if HAS_SSL:
     URL = "https://{}/".format(FQDN)
 else:
     URL = "http://{}/".format(FQDN)
-BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001987654567")).split())) 
+BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1003693399086")).split())) 
 OWNER_USERNAME = "LazyDeveloper"
 
 
 # add premium logs channel id
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002062925443'))
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1003693399086'))
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
